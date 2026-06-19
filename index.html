@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,44 +16,41 @@
             align-items: center;
             justify-content: center;
         }
-        #calculator {
-
+        #display {
+            height: 100px;
+            background-color: aqua;
         }
-
+        #buttons {
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr 4fr;
+            grid-template-rows: 4fr 4fr 4fr 4fr;
+            height: 200px;
+            width: 300px;
+        }
     </style>
 </head>
-
 <body>
     <div class="calculator">
-        <div id="display"></div>
+        <div id="display">0</div>
         <div id="buttons">
-            <div id="number-btn">
-                <button id="9">9</button>
-                <button id="8">8</button>
-                <button id="7">7</button>
-                <button id="6">6</button>
-                <button id="5">5</button>
-                <button id="4">4</button>
-                <button id="3">3</button>
-                <button id="2">2</button>
-                <button id="1">1</button>
-                <button id="0">0</button>
-            </div>
-            <div id="operator-btn">
-                <button>+</button>
-                <button>-</button>
-                <button>*</button>
-                <button>/</button>
-                <button>=</button>
-            </div>
-            <div id="clear-btn">
-                <button>C</button>
-            </div>
+            <button id="7">7</button>
+            <button id="8">8</button>
+            <button id="9">9</button>
+            <button>/</button>
+            <button id="4">4</button>
+            <button id="5">5</button>
+            <button id="6">6</button>
+            <button>*</button>
+            <button id="1">1</button>
+            <button id="2">2</button>
+            <button id="3">3</button>
+            <button>-</button>
+            <button>C</button>
+            <button id="0">0</button>
+            <button>=</button>
+            <button>+</button>
         </div>
     </div>
-
-
     <script src="script.js"></script>
 </body>
-
 </html>
