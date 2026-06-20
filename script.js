@@ -1,6 +1,8 @@
 let firstNumber
 let operator
 let waitingForSecondNumber = false
+let secondNumber
+let result
 
 display = document.getElementById("display")
 clearbtn = document.getElementById("clear-btn")
@@ -230,6 +232,34 @@ addbtn.addEventListener(
         waitingForSecondNumber = true
     }
 )
+subtractbtn = document.getElementById("subtract-btn")
+subtractbtn.addEventListener(
+    "click",
+    function () {
+        firstNumber = display.innerText
+        operator = "-"
+        waitingForSecondNumber = true
+    }
+)
+multiplybtn = document.getElementById("multiply-btn")
+multiplybtn.addEventListener(
+    "click",
+    function () {
+        firstNumber = display.innerText
+        operator = "*"
+        waitingForSecondNumber = true
+    }
+)
+dividebtn = document.getElementById("divide-btn")
+dividebtn.addEventListener(
+    "click",
+    function () {
+        firstNumber = display.innerText
+        operator = "/"
+        waitingForSecondNumber = true
+    }
+)
+
 equalbtn = document.getElementById("equal-btn")
 equalbtn.addEventListener(
     "click",
