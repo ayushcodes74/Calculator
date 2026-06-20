@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,16 +17,54 @@
             align-items: center;
             justify-content: center;
         }
-        #display {
-            height: 80px;
-            background-color: aqua;
-        }
         #buttons {
             display: grid;
             grid-template-columns: 4fr 4fr 4fr 4fr;
             grid-template-rows: 4fr 4fr 4fr 4fr;
             height: 200px;
             width: 300px;
+        }
+        .calculator {
+            background: #0f172a;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        #display {
+            height: 80px;
+            background-color: #1e293b;
+            color: white;
+            font-size: 2rem;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding-right: 20px;
+            border-radius: 12px;
+            margin-bottom: 10px;
+        }
+        button {
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        #add-btn,
+        #subtract-btn,
+        #multiply-btn,
+        #divide-btn {
+            background-color: #f59e0b;
+            color: white;
+        }
+        #equal-btn {
+            background-color: #22c55e;
+            color: white;
+        }
+        #clear-btn {
+            background-color: #ef4444;
+            color: white;
+        }
+        #buttons {
+            gap: 5px;
         }
     </style>
 </head>
